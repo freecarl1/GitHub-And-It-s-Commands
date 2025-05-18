@@ -79,65 +79,65 @@ _Isoler le travail dans les branches, changer le contexte et intégrer les chang
 | `git log` | Afficher tous les commits dans l'historique de la branche actuelle |
 
 ### Sharing & Updating Projects
-_Retrieving updates from another repository and updating local repos_
+_Récupération des mises à jour d'un autre repository et mise à jour des repository locaux_
 
 | Commande | Description |
 | ------- | ----------- |
-| `git push origin [branch name]` | Push a branch to your remote repository |
-| `git push -u origin [branch name]` | Push changes to remote repository (and remember the branch) |
-| `git push` | Push changes to remote repository (remembered branch) |
-| `git push origin --delete [branch name]` | Delete a remote branch |
-| `git pull` | Update local repository to the newest commit |
-| `git pull origin [branch name]` | Pull changes from remote repository |
-| `git remote add origin ssh://git@github.com/[username]/[repository-name].git` | Add a remote repository |
-| `git remote set-url origin ssh://git@github.com/[username]/[repository-name].git` | Set a repository's origin branch to SSH |
-| `git fetch [alias]` | Fetch down all the branches from that Git remote |
+| `git push origin [branch name]` | Poussez une branche vers votre référentiel distant |
+| `git push -u origin [branch name]` | Transférer les modifications vers le référentiel distant (et mémoriser la branche) |
+| `git push` | Transférer les modifications vers le référentiel distant (branche mémorisée) |
+| `git push origin --delete [branch name]` | Supprimer une branche remote |
+| `git pull` | Mettre à jour le repository local avec le commit le plus récent |
+| `git pull origin [branch name]` | Extraire les modifications du référentiel distant |
+| `git remote add origin ssh://git@github.com/[username]/[repository-name].git` | Ajouter un référentiel distant |
+| `git remote set-url origin ssh://git@github.com/[username]/[repository-name].git` | Définir la branche d'origine d'un référentiel sur SSH |
+| `git fetch [alias]` | Récupérer toutes les branches de cette télécommande Git |
 
 ### Inspection & Comparison
 _Examining logs, diffs and object information_
 
 | Commande | Description |
 | ------- | ----------- |
-| `git log` | Show the commit history for the currently active branch |
-| `git log --summary` | View changes (detailed) |
-| `git log --oneline` | View changes (briefly) |
-| `git diff [source branch] [target branch]` | Preview changes before merging |
-| `git log branchB..branchA` | Show the commits on branchA that are not on branchB |
-| `git log --follow [file]` | Show the commits that changed file, even across renames |
-| `git diff branchB...branchA` | Show the diff of what is in branchA that is not in branchB |
-| `git show [SHA]` | Show any object in Git in human-readable format |
+| `git log` | Afficher l'historique des commits pour la branche actuellement active |
+| `git log --summary` | Afficher les modifications (détaillées) |
+| `git log --oneline` | Afficher les modifications (brièvement) |
+| `git diff [source branch] [branche cible]` | Prévisualiser les modifications avant la fusion |
+| `git log branchB..branchA` | Afficher les commits sur la branche A qui ne sont pas sur la branche B |
+| `git log --follow [file]` | Afficher les commits qui ont modifié le fichier, même après les renommages |
+| `git diff branchB...branchA` | Afficher la différence entre ce qui est dans la branche A et ce qui n'est pas dans la branche B |
+| `git show [SHA]` | Afficher n'importe quel objet dans Git dans un format lisible par l'homme |
 
 ### TRACKING PATH CHANGES
 _Versioning file removes and path changes_
 
 | Commande | Description |
 | ------- | ----------- |
-| `git rm [file]` | Delete the file from project and stage the removal for commit |
-| `git mv [existing-path] [new-path]` | Change an existing file path and stage the move |
-| `git log --stat -M` | Show all commit logs with indication of any paths that moved |
+| `git rm [file]` | Supprimez le fichier du projet et organisez la suppression pour la validation |
+| `git mv [existing-path] [new-path]` | Modifier un chemin de fichier existant et organiser le déplacement |
+| `git log --stat -M` | Afficher tous les journaux de validation avec indication de tous les chemins déplacés |
 
 ### REWRITE HISTORY
-_Rewriting branches, updating commits and clearing history_
+_Réécriture des branches, mise à jour des commits et effacement de l'historique_
 
 | Commande | Description |
 | ------- | ----------- |
-| `git rebase [branch]` | Apply any commits of current branch ahead of specified one |
-| `git reset --hard [commit]` | Clear staging area, rewrite working tree from specified commit |
+| `git rebase [branch]` | Appliquer tous les commits de la branche actuelle avant celui spécifié |
+| `git reset --hard [commit]` | Effacer la zone de préparation, réécrire l'arborescence de travail à partir de la validation spécifiée |
 
 ### IGNORING PATTERNS
-_Preventing unintentional staging or commiting of files_
+_Prévenir la mise en scène ou la validation involontaire de fichiers_
 
 | Commande | Description |
 | ------- | ----------- |
-| `logs/`<br/>`*.notes`<br/>`pattern*/` | Save a file with desired paterns as .gitignore with either direct string matches or wildcard globs. |
-| `git config --global core.excludesfile [file]` | System wide ignore patern for all local repositories |
+| `logs/`<br/>`*.notes`<br/>`pattern*/` | Enregistrez un fichier avec les modèles souhaités sous le nom .gitignore avec des correspondances de chaîne directes ou des globs génériques. |
+| `git config --global core.excludesfile [file]` | Modèle d'ignorance à l'échelle du système pour tous les référentiels locaux |
 
 ### TEMPORARY COMMITS
-_Temporarily store modified, tracked files in order to change branches_
+_Stocker temporairement les fichiers modifiés et suivis afin de changer de branche_
 
 | Commande | Description |
 | ------- | ----------- |
-| `git stash` | Save modified and staged changes |
-| `git stash list` | List stack-order of stashed file changes |
-| `git stash pop` | Write working from top of stash stack |
-| `git stash drop` | Discard the changes from top of stash stack |
+| `git stash` | Enregistrer les modifications modifiées et mises en scène |
+| `git stash list` | Liste des modifications de fichiers stockées dans l'ordre de la pile |
+| `git stash pop` | Écrire en travaillant à partir du haut de la pile de réserve |
+| `git stash drop` | Supprimer les modifications du haut de la pile de réserve |
