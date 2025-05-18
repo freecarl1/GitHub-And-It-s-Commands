@@ -28,9 +28,9 @@ _Configuring user information used across all local repositories_
 
 | Setup |
 |-------|
-|`git config --global user.name “[firstname lastname]”`  Set a name that is identifiable for credit when review version history|
-|`git config --global user.email “[valid-email]”`  Set an email address that will be associated with each history marker|
-|`git config --global color.ui auto`  Set automatic command line coloring for Git for easy reviewing|
+|`git config --global user.name “[firstname lastname]”` < br / > Set a name that is identifiable for credit when review version history|
+|`git config --global user.email “[valid-email]”` < br / > Set an email address that will be associated with each history marker|
+|`git config --global color.ui auto` < br / > Set automatic command line coloring for Git for easy reviewing|
 
 ### SETUP & INIT
 _Configuring user information, initializing and cloning repositories_
@@ -129,8 +129,7 @@ _Preventing unintentional staging or commiting of files_
 
 | Command | Description |
 | ------- | ----------- |
-| `logs/  *.notes  pattern*/` | Save a file with desired paterns as .gitignore with either direct string
-matches or wildcard globs. |
+| `logs/ < br / > *.notes  pattern*/` | Save a file with desired paterns as .gitignore with either direct string matches or wildcard globs. |
 | `git config --global core.excludesfile [file]` | System wide ignore patern for all local repositories |
 
 ### TEMPORARY COMMITS
