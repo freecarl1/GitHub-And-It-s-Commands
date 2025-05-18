@@ -79,6 +79,7 @@ _Isolating work in branches, changing context, and integrating changes_
 | `git log` | Show all commits in the current branch’s history |
 
 ### Sharing & Updating Projects
+_Retrieving updates from another repository and updating local repos_
 
 | Command | Description |
 | ------- | ----------- |
@@ -93,6 +94,7 @@ _Isolating work in branches, changing context, and integrating changes_
 | `git fetch [alias]` | Fetch down all the branches from that Git remote |
 
 ### Inspection & Comparison
+_Examining logs, diffs and object information_
 
 | Command | Description |
 | ------- | ----------- |
@@ -101,3 +103,44 @@ _Isolating work in branches, changing context, and integrating changes_
 | `git log --oneline` | View changes (briefly) |
 | `git diff [source branch] [target branch]` | Preview changes before merging |
 | `git log branchB..branchA` | Show the commits on branchA that are not on branchB |
+| `git log --follow [file]` | Show the commits that changed file, even across renames |
+| `git diff branchB...branchA` | Show the diff of what is in branchA that is not in branchB |
+| `git show [SHA]` | Show any object in Git in human-readable format |
+
+### TRACKING PATH CHANGES
+_Versioning file removes and path changes_
+
+| Command | Description |
+| ------- | ----------- |
+| `git rm [file]` | Delete the file from project and stage the removal for commit |
+| `git mv [existing-path] [new-path]` | Change an existing file path and stage the move |
+| `git log --stat -M` | Show all commit logs with indication of any paths that moved |
+
+### REWRITE HISTORY
+_Rewriting branches, updating commits and clearing history_
+
+| Command | Description |
+| ------- | ----------- |
+| `git rebase [branch]` | Apply any commits of current branch ahead of specified one |
+| `git reset --hard [commit]` | Clear staging area, rewrite working tree from specified commit |
+
+### IGNORING PATTERNS
+_Preventing unintentional staging or commiting of files_
+
+| Command | Description |
+| ------- | ----------- |
+| `logs/`
+`*.notes`
+`pattern*/` | Save a file with desired paterns as .gitignore with either direct string
+matches or wildcard globs. |
+| `git config --global core.excludesfile [file]` | System wide ignore patern for all local repositories |
+
+### TEMPORARY COMMITS
+_Temporarily store modified, tracked files in order to change branches_
+
+| Command | Description |
+| ------- | ----------- |
+| `git stash` | Save modified and staged changes |
+| `git stash list` | List stack-order of stashed file changes |
+| `git stash pop` | Write working from top of stash stack |
+| `git stash drop` | Discard the changes from top of stash stack |
