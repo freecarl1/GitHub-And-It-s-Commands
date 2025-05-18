@@ -129,7 +129,7 @@ _Preventing unintentional staging or commiting of files_
 
 | Command | Description |
 | ------- | ----------- |
-| `logs/ <br/> *.notes  pattern*/` | Save a file with desired paterns as .gitignore with either direct string matches or wildcard globs. |
+| `logs/`<br/>`*.notes`<br/>`pattern*/` | Save a file with desired paterns as .gitignore with either direct string matches or wildcard globs. |
 | `git config --global core.excludesfile [file]` | System wide ignore patern for all local repositories |
 
 ### TEMPORARY COMMITS
