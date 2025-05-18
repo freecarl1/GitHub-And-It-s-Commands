@@ -35,7 +35,7 @@ _Configuration des informations utilisateur utilisées dans tous les référenti
 ### SETUP & INIT
 _Configuration des informations utilisateur, initialisation et clonage des référentiels_
 
-| Commandee | Description |
+| Commande | Description |
 | ------- | ----------- |
 | `git init` | Initialize an existing directory as a Git repository |
 | `git clone ssh://git@github.com/[username]/[repository-name].git` | Retrieve an entire repository from a hosted location via URL |
@@ -45,38 +45,38 @@ _Working with snapshots and the Git staging area_
 
 | Commande | Description |
 | ------- | ----------- |
-| `git status` | Show modified files in working directory, staged for your next commit |
-| `git add [file-name.txt]` | Add a file as it looks now to your next commit (stage) |
-| `git add -A` | Add all new and changed files to the staging area |
-| `git commit -m "[commit message]"` | Commit your staged content as a new commit snapshot |
-| `git reset [file]` | Unstage a file while retaining the changes in working directory |
-| `git diff` | Diff of what is changed but not staged |
-| `git diff --staged` | Diff of what is staged but not yet commited |
-| `git rm -r [file-name.txt]` | Remove a file (or folder) |
-| `git remote -v` | View the remote repository of the currently working file or directory |
+| `git status` | Afficher les fichiers modifiés dans le répertoire de travail, préparés pour votre prochain commit |
+| `git add [file-name.txt]` | Ajoutez un fichier tel qu'il apparaît actuellement à votre prochain commit (étape) |
+| `git add -A` | Ajoutez tous les fichiers nouveaux et modifiés à la zone de préparation |
+| `git commit -m "[commit message]"` | Validez votre contenu mis en scène en tant que nouvel instantané de validation |
+| `git reset [file]` | Annuler la mise en scène d'un fichier tout en conservant les modifications dans le répertoire de travail |
+| `git diff` | Différence entre ce qui est modifié mais pas mis en scène |
+| `git diff --staged` | Différence entre ce qui est mis en scène mais pas encore validé |
+| `git rm -r [file-name.txt]` | Supprimer un fichier (ou un dossier) |
+| `git remote -v` | Afficher le référentiel distant du fichier ou du répertoire en cours de travail |
 
 ### BRANCH & MERGE
-_Isolating work in branches, changing context, and integrating changes_
+_Isoler le travail dans les branches, changer le contexte et intégrer les changements_
 
 | Commande | Description |
 | ------- | ----------- |
-| `git branch` | List branches (the asterisk denotes the current branch) |
-| `git branch -a` | List all branches (local and remote) |
-| `git branch [branch name]` | create a new branch at the current commit |
-| `git branch -d [branch name]` | Delete a branch |
-| `git push origin --delete [branch name]` | Delete a remote branch |
-| `git checkout -b [branch name]` | Create a new branch and switch to it |
-| `git checkout -b [branch name] origin/[branch name]` | Clone a remote branch and switch to it |
-| `git branch -m [old branch name] [new branch name]` | Rename a local branch |
-| `git checkout [branch name]` | Switch to a branch |
-| `git checkout -` | Switch to the branch last checked out |
-| `git checkout -- [file-name.txt]` | Discard changes to a file |
-| `git merge [branch name]` | Merge the specified branch’s history into the current one |
-| `git merge [source branch] [target branch]` | Merge a branch into a target branch |
-| `git stash` | Stash changes in a dirty working directory |
-| `git stash clear` | Remove all stashed entries |
-| `git stash pop` | Apply latest stash to working directory |
-| `git log` | Show all commits in the current branch’s history |
+| `git branch` | Lister les branches (l'astérisque indique la branche actuelle) |
+| `git branch -a` | Lister toutes les branche (locales et distantes) |
+| `git branch [branch name]` | créer une nouvelle branche au niveau du commit actuel |
+| `git branch -d [branch name]` | Supprimer une branche |
+| `git push origin --delete [branch name]` | Supprimer une remote branche |
+| `git checkout -b [branch name]` | Créez une nouvelle branche et basculez vers celle-ci |
+| `git checkout -b [branch name] origin/[branch name]` | Cloner une branche distante et y basculer |
+| `git branch -m [old branch name] [new branch name]` | Renommer une branche locale |
+| `git checkout [branch name]` | Passer à une branche |
+| `git checkout -` | Passer à la dernière branche extraite |
+| `git checkout -- [file-name.txt]` | Annuler les modifications apportées à un fichier |
+| `git merge [branch name]` | Fusionner l’historique de la branche spécifiée dans celui actuel |
+| `git merge [source branch] [target branch]` | Fusionner une branche dans une branche cible |
+| `git stash` | Cacher les modifications dans un répertoire de travail sale |
+| `git stash clear` | Supprimer toutes les entrées stockées |
+| `git stash pop` | Appliquer la dernière réserve au répertoire de travail |
+| `git log` | Afficher tous les commits dans l'historique de la branche actuelle |
 
 ### Sharing & Updating Projects
 _Retrieving updates from another repository and updating local repos_
