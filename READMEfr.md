@@ -4,7 +4,7 @@ GitHub et ses Commandees
 
 
 ## Versions traduites
-- [English Version](README.md)
+- [English version (original)](README.md)
 - [Türkçe Versiyon](READMEtr.md)
 - [Versión en español](READMEes.md)
 
@@ -13,15 +13,15 @@ GitHub et ses Commandees
 _Avec des installateurs spécifiques à la plate-forme pour Git, GitHub offre également la possibilité de rester à jour avec les dernières versions de l'outil de ligne de Commandee tout en fournissant une interface utilisateur graphique pour l'interaction quotidienne, la révision et la synchronisation du référentiel._
 
 #### GitHub pour Windows
-_htps://windows.github.com_
+_https://windows.github.com_
 
 #### GitHub pour Mac
-_htps://mac.github.com_
+_https://mac.github.com_
 
 _Pour les plateformes Linux et Solaris, la dernière version est disponible sur le site Web officiel de Git._
 
 #### GitHub pour toutes les plateformes
-_htp://git-scm.com_
+_http://git-scm.com_
 
 ### INSTALLATION
 _Configuration des informations utilisateur utilisées dans tous les référentiels locaux_

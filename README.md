@@ -4,24 +4,24 @@ GitHub & It's Commands
 
 
 ## Translated Versions
-- [version française](READMEfr.md)
-- [Türkçe versiyon](READMEtr.md)
-- [Versión en español](READMEes.md)
+- [Version Française](READMEfr.md)
+- [Türkçe Versiyon](READMEtr.md)
+- [Versión en Español](READMEes.md)
 
 
 ### INSTALLATION & GUIS
 _With platform specific installers for Git, GitHub also provides the ease of staying up-to-date with the latest releases of the command line tool while providing a graphical user interface for day-to-day interaction, review, and repository synchronization._
 
 #### GitHub for Windows
-_htps://windows.github.com_
+_https://windows.github.com_
 
 #### GitHub for Mac
-_htps://mac.github.com_
+_https://mac.github.com_
 
 _For Linux and Solaris platforms, the latest release is available on the official Git web site._
 
 #### GitHub for All Platforms
-_htp://git-scm.com_
+_http://git-scm.com_
 
 ### SETUP
 _Configuring user information used across all local repositories_
